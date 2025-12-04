@@ -4,7 +4,7 @@ import 'modern-normalize'; //
 import './globals.css';
 
 import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer'; 
+import Footer from '@/components/Footer/Footer';
 import TanStackProvider from '@/components/TanStackProvider/TanStackProvider';
 
 const inter = Inter({ subsets: ['latin'] });

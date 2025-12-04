@@ -72,3 +72,21 @@
 .button:hover {
     background-color: #ffebee;
 }
+
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.link {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

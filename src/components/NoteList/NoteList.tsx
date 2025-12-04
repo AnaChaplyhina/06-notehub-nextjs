@@ -1,6 +1,7 @@
+import Link from 'next/link'; 
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { deleteNote } from '../../services/noteService';
-import { Note } from '../../types/note';
+import { deleteNote } from '@/lib/api';
+import { Note } from '@/types/note';
 import css from './NoteList.module.css';
 
 interface NoteListProps {
@@ -35,14 +36,21 @@ const NoteList = ({ notes }: NoteListProps) => {
           <p className={css.content}>{note.content}</p>
           <div className={css.footer}>
             <span className={css.tag}>{note.tag}</span>
-            <button 
-              className={css.button} 
-              type="button"
-              onClick={() => handleDelete(note.id)}
-              disabled={deleteMutation.isPending}
-            >
-              {deleteMutation.isPending ? '...' : 'Delete'}
-            </button>
+            <div className={css.actions}> 
+      
+              <Link href={`/notes/${note.id}`} className={css.link}>
+                View details
+              </Link>
+              
+              <button 
+                className={css.button} 
+                type="button"
+                onClick={() => handleDelete(note.id)}
+                disabled={deleteMutation.isPending}
+              >
+                {deleteMutation.isPending ? '...' : 'Delete'}
+              </button>
+            </div>
           </div>
         </li>
       ))}
