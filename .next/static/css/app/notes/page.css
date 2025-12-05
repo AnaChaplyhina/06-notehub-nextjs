@@ -3,157 +3,160 @@
   \***************************************************************************************************************************************************************************************************************************************************************************************/
 .NoteList_list__AE0ha {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 24px;
-    gap: 24px;
-    padding: 24px;
-    list-style: none;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 16px;
+    gap: 16px;
+    padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .NoteList_listItem__BImss {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
     border-radius: 8px;
-    padding: 20px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    height: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s;
-}
-
-.NoteList_listItem__BImss:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    min-height: 180px;
 }
 
 .NoteList_title__UAESg {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 12px;
-    color: #333;
+    margin: 0 0 8px 0;
+    color: #212529;
 }
 
 .NoteList_content__uaWR6 {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: auto;
-   
-    white-space: pre-wrap;
-  
-    line-height: 1.5;
-}
-
-.NoteList_footer__xJf7w {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.NoteList_tag__iS8Rp {
-    padding: 4px 12px;
-    border-radius: 16px;
-    background-color: #e3f2fd;
-    color: #1976d2;
+    margin: 0;
+    flex-grow: 1;
     font-size: 14px;
-    font-weight: 500;
+    color: #495057;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .NoteList_button__1jnml {
-    background: none;
+    align-self: flex-end;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #dc3545;
     border: none;
-    cursor: pointer;
-    color: #ff5252;
-    font-weight: 500;
-    padding: 8px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .NoteList_button__1jnml:hover {
-    background-color: #ffebee;
+    background-color: #bb2d3b;
 }
 
-
-.NoteList_actions__qT1w2 {
+.NoteList_footer__xJf7w {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    margin-top: auto;
+}
+
+.NoteList_tag__iS8Rp {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #0d6efd;
+    background-color: #e7f1ff;
+    border: 1px solid #b6d4fe;
+    border-radius: 12px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .NoteList_link__YhPOo {
-    text-decoration: none;
-    color: #1976d2;
-    font-weight: 500;
+    align-self: flex-end;
+    padding: 6px 12px;
     font-size: 14px;
+    color: #fff;
+    background-color: #0d6efd;
+    /* синій колір */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s ease;
 }
 
 .NoteList_link__YhPOo:hover {
-    text-decoration: underline;
+    background-color: #0b5ed7;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/SearchBox/SearchBox.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************/
 .SearchBox_input__X5_ZE {
-    padding: 12px 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    flex: 1 1;
+    max-width: 240px;
+    padding: 6px 12px;
     font-size: 16px;
-    width: 300px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.SearchBox_input__X5_ZE:focus {
-    border-color: #1976d2;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/Pagination/Pagination.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************/
 .Pagination_pagination__c7olK {
     display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 16px 0;
     list-style: none;
     padding: 0;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 24px;
+    margin: 0;
 }
 
-.Pagination_pageLink__0fG_A {
-    padding: 8px 16px;
-    border: 1px solid #dfe3e8;
+.Pagination_pagination__c7olK li {
+    border: 1px solid #dee2e6;
     border-radius: 4px;
     cursor: pointer;
-    color: #212b36;
+    min-width: 36px;
+    height: 36px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.Pagination_pagination__c7olK li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #0d6efd;
+    font-size: 14px;
+}
+
+.Pagination_pagination__c7olK li:hover {
+    background-color: #e9ecef;
+}
+
+.Pagination_pagination__c7olK li.Pagination_active__xC1TQ:hover {
+    background-color: #0d6efd;
+}
+
+.Pagination_active__xC1TQ {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.Pagination_active__xC1TQ a {
+    color: #fff !important;
     font-weight: 500;
-    transition: all 0.2s;
-    background-color: #fff;
-}
-
-.Pagination_pageLink__0fG_A:hover {
-    background-color: #f4f6f8;
-    border-color: #c4cdd5;
-}
-
-
-.Pagination_active__xC1TQ .Pagination_pageLink__0fG_A {
-    background-color: #1976d2;
-    color: #fff;
-    border-color: #1976d2;
-}
-
-.Pagination_previous__Rl5Ot,
-.Pagination_next__l_k7T {
-    font-weight: bold;
-}
-
-.Pagination_disabled__Nuiej .Pagination_pageLink__0fG_A {
-    color: #919eab;
-    pointer-events: none;
-    background-color: #f9fafb;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/Modal/Modal.module.css ***!
@@ -162,25 +165,23 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 37, 41, 0.6);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     z-index: 1000;
 }
 
 .Modal_modal__JNobJ {
-    background-color: white;
+    background-color: #ffffff;
     padding: 24px;
     border-radius: 8px;
     max-width: 500px;
     width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/NoteForm/NoteForm.module.css ***!
@@ -194,93 +195,139 @@
 .NoteForm_formGroup__ZMLJX {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-}
-
-.NoteForm_formGroup__ZMLJX label {
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 500;
+    color: #212529;
 }
 
 .NoteForm_input__rHybZ,
 .NoteForm_textarea__FhdfN,
 .NoteForm_select__Z4_aH {
-    padding: 10px;
-    border: 1px solid #ccc;
+    margin-top: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
     border-radius: 4px;
-    font-size: 16px;
-    font-family: inherit;
-}
-
-.NoteForm_textarea__FhdfN {
-    resize: vertical;
-}
-
-.NoteForm_error___8w_k {
-    color: #d32f2f;
-    font-size: 12px;
+    resize: none;
 }
 
 .NoteForm_actions__5X4dL {
     display: flex;
     justify-content: flex-end;
-    gap: 12px;
-    margin-top: 10px;
-}
-
-.NoteForm_cancelButton__os3Ma {
-    background: none;
-    border: 1px solid #ccc;
-    padding: 8px 16px;
-    border-radius: 4px;
+    gap: 8px;
 }
 
 .NoteForm_submitButton__UUawY {
-    background-color: #1976d2;
-    color: white;
-    border: none;
     padding: 8px 16px;
+    font-size: 16px;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.NoteForm_submitButton__UUawY:hover {
+    background-color: #0b5ed7;
 }
 
 .NoteForm_submitButton__UUawY:disabled {
-    background-color: #90caf9;
+    background-color: #6c757d;
     cursor: not-allowed;
+}
+
+.NoteForm_cancelButton__os3Ma {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.NoteForm_cancelButton__os3Ma:hover {
+    background-color: #e2e6ea;
+}
+
+.NoteForm_error___8w_k {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/notes/Notes.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
-.Notes_app__1f7GT {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    background-color: #f5f7fa;
-    min-height: 100vh;
-}
-
-.Notes_toolbar__gToXe {
-    background-color: #fff;
-    padding: 20px 24px;
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 24px;
+.Notes_form__QThaq {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 16px;
-    flex-wrap: wrap;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.Notes_createBtn__tsdfm {
-    margin-left: auto;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+.Notes_formGroup__U0QmK {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.Notes_input__0tRR9,
+.Notes_textarea__18ZRh,
+.Notes_select__qBdYh {
+    margin-top: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
     border-radius: 4px;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    resize: none;
 }
 
-.Notes_createBtn__tsdfm:hover {
-    background-color: #45a049;
+.Notes_actions__cA4DN {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.Notes_submitButton__zpm9v {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.Notes_submitButton__zpm9v:hover {
+    background-color: #0b5ed7;
+}
+
+.Notes_submitButton__zpm9v:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.Notes_cancelButton__nkaE5 {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.Notes_cancelButton__nkaE5:hover {
+    background-color: #e2e6ea;
+}
+
+.Notes_error__tjvwp {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
 }

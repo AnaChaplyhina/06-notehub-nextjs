@@ -27,17 +27,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/notes/loading.js"
-    ],
-    "/notes/[id]/error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/notes/[id]/error.js"
-    ],
-    "/notes/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/notes/[id]/page.css",
-      "static/chunks/app/notes/[id]/page.js"
     ]
   }
 }

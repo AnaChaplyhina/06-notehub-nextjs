@@ -1,92 +1,95 @@
 .list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 24px;
-    padding: 24px;
-    list-style: none;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .listItem {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
     border-radius: 8px;
-    padding: 20px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    height: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s;
-}
-
-.listItem:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    min-height: 180px;
 }
 
 .title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 12px;
-    color: #333;
+    margin: 0 0 8px 0;
+    color: #212529;
 }
 
 .content {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: auto;
-   
-    white-space: pre-wrap;
-  
-    line-height: 1.5;
-}
-
-.footer {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.tag {
-    padding: 4px 12px;
-    border-radius: 16px;
-    background-color: #e3f2fd;
-    color: #1976d2;
+    margin: 0;
+    flex-grow: 1;
     font-size: 14px;
-    font-weight: 500;
+    color: #495057;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .button {
-    background: none;
+    align-self: flex-end;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #dc3545;
     border: none;
-    cursor: pointer;
-    color: #ff5252;
-    font-weight: 500;
-    padding: 8px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .button:hover {
-    background-color: #ffebee;
+    background-color: #bb2d3b;
 }
 
-
-.actions {
+.footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    margin-top: auto;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #0d6efd;
+    background-color: #e7f1ff;
+    border: 1px solid #b6d4fe;
+    border-radius: 12px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .link {
-    text-decoration: none;
-    color: #1976d2;
-    font-weight: 500;
+    align-self: flex-end;
+    padding: 6px 12px;
     font-size: 14px;
+    color: #fff;
+    background-color: #0d6efd;
+    /* синій колір */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s ease;
 }
 
 .link:hover {
-    text-decoration: underline;
+    background-color: #0b5ed7;
 }
