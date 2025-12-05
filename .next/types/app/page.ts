@@ -1,8 +1,8 @@
-// File: C:\Users\Anastasia\OneDrive\Desktop\06-notehub-nextjs\src\app\page.tsx
-import * as entry from '../../../src/app/page.js'
+// File: C:\Users\Anastasia\OneDrive\Desktop\06-notehub-nextjs\app\page.tsx
+import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../src/app/page.js')
+type TEntry = typeof import('../../../app/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

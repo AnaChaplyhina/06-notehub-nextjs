@@ -12,21 +12,21 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/notes/page": [
+    "/notes/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/notes/page.css",
-      "static/chunks/app/notes/page.js"
+      "static/chunks/app/notes/loading.js"
     ],
     "/notes/error": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/notes/error.js"
     ],
-    "/notes/loading": [
+    "/notes/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/notes/loading.js"
+      "static/css/app/notes/page.css",
+      "static/chunks/app/notes/page.js"
     ]
   }
 }
